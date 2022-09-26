@@ -1,0 +1,18 @@
+from argparse import ONE_OR_MORE
+
+
+thea = 19
+chido= 19
+che=20
+ave = 3
+avg= (thea+chido+che)/ave
+print("The AVG. age of 3 people in class is", avg)
+andrewage = 18
+andrewplace= "San Diego"
+andrewbd= "Mar. 18"
+print("Andrew is", andrewage, "he is from", andrewplace, "his birthday is", andrewbd)
+a = float(input())
+b = float(input())
+c = float(input())
+w = (a + b + c )
+print(w)

@@ -1,0 +1,16 @@
+counter = 0
+
+while counter < 5:
+    print("You are in the",counter+1,"iteration of the loop.")
+    counter+=1
+
+total = 0
+
+for x in range(10):
+    x = int(input("Your number:"))
+    total += x
+print(total)
+
+
+
+ 

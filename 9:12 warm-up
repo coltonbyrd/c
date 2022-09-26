@@ -1,0 +1,9 @@
+names = ""
+
+for x in range(4):
+    names = names + str(input("please enter a name:")).capitalize + ","
+names = names + str(input("please enter a name:")).capitalize
+
+print(names)
+
+

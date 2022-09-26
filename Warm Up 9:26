@@ -1,0 +1,37 @@
+'''age = str(input("Please in put your age:"))
+color = str(input("Please input your favorite color:"))
+sibNum = str(input("Please input the number of siblings you have:"))
+User_Info = "Your age is " + age + ", your favorite color is " + color + ", and you have " + sibNum + " siblings."
+print(User_Info)
+print(len(User_Info))'''
+
+'''x = input("Please input an animal: ")
+y = input("Please input an animal: ")
+z = input("Please input an animal: ")
+xyz = (x[0] + y [0] +z[0])
+lowerxyz = xyz.lower()
+print(lowerxyz)
+uperxyz = xyz.upper()
+print(uperxyz)'''
+
+'''x = input("Please enter a string that has more than 10 characters: ")
+while len(x) < 10:
+    print("You entered a string with less than 10 characters!")
+    x = input("Enter a string with more than 10 characters:")
+y = x[4:]
+print(y)'''
+
+x = input("Please enter a string: ")
+upper = 0
+lower = 0
+special = 0
+for y in x:
+    if y.isupper():
+        #add 1 to uppercase letters
+        upper += 1
+    elif y.islower():
+        #add 1 to lowercase letter
+        lower += 1
+    else:
+        special+=
+print("Uppercase letters: ", upper, "lowercase letter: ", lower, "special character: ", special)

@@ -1,0 +1,57 @@
+"""num = float(input("Please provide me with a number:"))
+if num>0:
+    print("This number is positive.")
+elif num==0:
+    print("This number is literally nothing.")
+else:
+    print("This number is negitive.")"""
+
+"""x = float(input("Please enter your grade:"))
+lettergrade = "None"
+
+while x > 100 and x < 0:
+    print("You entered an invalid grade!")
+    grade = float(input("Please enter valid grade:"))
+
+if x<=100 and x>= 90:
+    lettergrade = "A"
+elif x<90 and x>= 80:
+    lettergrade = "B"
+elif x<80 and x>= 70:
+    lettergrade = "C"
+elif x<70 and x>= 60:
+    lettergrade = "D"
+else:
+    lettergrade= "F"
+print(lettergrade)"""
+
+"""sum = 0
+for x in range(6):
+    num = float(input("please enter a number:"))
+    if num > 0:
+        sum += num
+    else:
+        print("You entered a negitive number")
+print(sum)"""
+
+"""temp = int(input("Please enter a temperature:"))
+if temp> 100:
+    print("Its hot")
+elif temp>100:
+    print("Its warm")
+elif temp>75:
+    print("Its cool")
+else:
+    print("Its cold")"""
+
+def GameStatus (lives, points):
+    if lives == 0:
+        print("You lost the game")
+    else:
+        print("You won the game")
+        if points > 20:
+            print("High Score!!!")
+            if lives == 3:
+                print("PERFECT GAME!!!")
+    return
+
