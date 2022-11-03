@@ -1,0 +1,18 @@
+# Use nested lists to store a set of 4 (x,y) coordinates
+# that, when connected, form a square. Store these coordinates
+# in a variable called SquareCoordinateList. 
+SquareCoordinateList =[[1,1],[1,-1],[-1,-1],[-1,1]]
+# Edit the (x,y) corrdinates using mathematics to make
+# the square have four times the area. Store these coordinates in 
+# a variable called FourTimesSquare
+for x in SquareCoordinateList:
+    x[0] = x[0] * 4
+    x[1] = x[1] * 4
+print(SquareCoordinateList)
+# Use tuples to store a set of 4 (x,y) coordinates
+# that, when connected, form a square. Store these coordinates
+# in a variable called SquareCoordinateTuple. 
+SquareCoordinateTuple = ((1,1),(1,-1),(-1,-1),(-1,1))
+# Edit the (x,y) corrdinates using mathematics to make
+# the square have four times the area. Store these coordinates in 
+# a variable called FourTimesTuple

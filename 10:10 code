@@ -1,0 +1,64 @@
+import random
+import statistics
+from turtle import Turtle
+# Warm- Up: Define a string variable of your choice.
+# Write two different loops that print out every character in the string
+# Iterate by index in the string to print out each character (hint: use range() and len())
+# Iterate by character in the string directly to print out each character
+string = "Today is monday"
+for ch in string:
+    print(ch)
+for index in range(len(string)):
+    print(string[index])
+# Exercise 1: Input 4 numbers from a user and store in a new list variable
+num1 = float(input("Please input a number: "))
+num2 = float(input("Please input a number: "))
+num3 = float(input("Please input a number: "))
+num4 = float(input("Please input a number: "))
+list1 = [num1, num2, num3, num4]
+print(list1)
+# What if I want to overwrite the first digit to be 10 regardless
+list1[0] = 10   
+print(list1)
+# Exercise 2: Input 100 random integers and store in a new list variable. Print the 50th number.
+list2 = []
+for x in range(100):
+    num1 = random.randint(0, 360)
+    list2.append(num1)
+print(list2[49])
+# Exercise 3: Calculate the sum of 100 random numbers(do this manually and then use the sum function)
+"""summy = 0
+for x in range(100):
+    num1 = random.randint(0, 360)
+    summy += num1
+print(summy)
+list3 = []
+for x in range(100):
+    num1 = random.randint(0, 360)
+    list3.append(num1)
+print("the sum is", sum[list3])"""
+# Exercise 4: Write a function to find the average of a list of numbers (then do this using the mean function)
+def average(listA):
+    sumoflistA = 0
+    for x in range(len(listA)):
+        sumoflistA += listA[x]
+    return sumoflistA / len(listA)
+avglist = average([6,7,8,9,10])
+print(avglist)
+avglist = statistics.mean([6,7,8,9,10])
+print(avglist)
+# Exercise 5: Find the smallest number in a list of numbers(you should write this code so it works for any length of list)
+list5 = [4,5,6,-100]
+smallestnum = list5[0]
+for x in list5:
+    if x < smallestnum:
+        smallestnum = x
+print(smallestnum)
+# Exercise 6: Write a function that takes two lists as parameters,and returns True if they have at least one common member. 
+def samchar(listA, listB):
+    for x in range(len(listA)):
+        for y in range(len(listB)):
+            if listA[x] == listB[y]:
+                return True
+    return False
+# Exercise 7: Write code to print the numbers of a specified list after removing even numbers from it

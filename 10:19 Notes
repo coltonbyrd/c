@@ -1,0 +1,176 @@
+'''# Activity 1
+# Store a dictionary 
+MultipleBirdTrips = {"Eagle": [0,1,0], "Hawk": [6,10,4], "Hummingbird": [7,3,5], "Mockingbird": [1,1,2]}
+
+# Allow the user to input the desired trip number and bird type.
+BirdType = str(input("Please enter a bird type: "))
+BirdTrip = int(input("Please enter which trip you want to check:"))
+
+# Print out the appropriate information 
+if BirdType in MultipleBirdTrips and BirdTrip<=3:
+    birdontrip = MultipleBirdTrips[BirdType]
+    birdontrip = birdontrip[BirdTrip-1] 
+    print("You saw", BirdType, birdontrip ,"times.")
+else:
+    print("You didn't see this bird")'''
+
+
+
+'''# Activity 2
+# create a list of my favorite animals
+Animals = ["zebra", "okapi", "dog", "cat", "giraffe"]
+# input an animal name from a user and display whether or not it is in the list
+InputAnimal = str(input("Please input the name of an animal: ")).lower()
+if InputAnimal in Animals:
+    print("This animal is among my top 5")
+else:
+    print("This animal is not in my top 5.")'''
+
+
+
+'''# Activity 3
+string = "hello I am a string"
+# print out every character in the string using a loop that loops by index
+
+for ch in string:
+    print(ch)'''
+
+
+#Activity 4
+# define a function that takes in a percentage as a parameter and returns 
+# a letter grade A,B,C,D or F
+def Letter_Grade(percentage):
+    # check to make sure the percentage is between 0 and 100
+    while percentage<0 or percentage>100:
+        percentage = input(int("You entered a number less than zero or larger than 100. Please reenter your percentage"))
+        lettergrade = "none"
+    if percentage>=90:
+        lettergrade = "A"
+    if percentage>=80:
+        lettergrade = "B"
+    if percentage>=70:
+        lettergrade = "C"
+    if percentage>=60:
+        lettergrade = "D"
+    if percentage < 60:
+        lettergrade = "F"
+
+lettergrade = Letter_Grade(int(input("Please input a grade as a percentage: ")))
+
+print(lettergrade)
+
+
+
+'''# Activity 5
+# input a temperature from the user
+temperature = float(input("Please input the temperatue for the day, in Farenheight"))
+# display whether the temperature means its going to be hot, warm, cool or cold today
+if temperature > 90:
+    print("It is going to be hot today")
+else:
+    if temperature > 73:
+        print("It is going to be warm today")
+    else:
+        if temperature > 60:
+            print("It is going to be cool today")
+        else:
+            print("It is going to be cold today")
+
+
+
+# Activity 6
+# a function that finds the total of two numbers 
+def floaty_sum (f1,f2):
+    return f1+f2
+
+floatnum = float(input("enter float"))
+print(floaty_sum (floatnum))
+
+
+# Activity 7
+# Store 5 inputted names in a list
+# Initialize the string variable to hold the first name starting with a capital letter
+names = (input("Enter a name: ")).capitalize()
+
+# loop through another four times, each time collecting a name from the
+# user input and adding that new name to the string "names" 
+for i in (0,1,2,3):
+    tempName = input("Enter a name: ")
+    tempName = tempName.capitalize()
+    names = tempName.capitalize()
+
+# print out our list of names that we have stored
+print(names)
+
+
+# Activity 8
+# input a string with at least 10 characters from the user. 
+string1 = ""
+while string1 < 10:
+    string1 = input()
+
+# trim the string so that it only has it's 5th character and beyond.
+newString = string1[5:len(string1)]
+print(newString)
+
+
+# Activity 9
+# Replace every letter in a string with the letter 'r'
+string = input()
+
+for i in range(len(string)):
+    newString += 'r'
+
+print(newString, "and", string)
+
+
+# Actvity 10
+# input a string from a user 
+UserString = input("Please enter a string: ")
+# display whether each character is uppercase or lowercase
+for index in UserString:
+    if UserString[index].isupper() == True:
+        print("The ", index, "letter", UserString[index], "is uppercase")
+    elif UserString[index].isupper() == False:
+        print("The ", index, "letter", UserString[index], "is lowercase")
+
+
+
+# Activity 11
+cost1 = 5
+cost2 = 4
+cost3 = 3
+
+total_cost = cost1 + cost2 + cost
+
+cost1 = input("Please enter price a: ")
+cost2 = input("Please enter price b: ")
+cost3 = input("Please enter price c: ")
+
+total_cost = cost1 + cost2 + cost3
+
+
+# Activity 12
+# Write a function to find the average of a list of numbers 
+def avgoflist(listA):
+    sumListA = 0
+    for x in range(len(listA)):
+        sumListA += listA[x]
+    avg = sumListA / len(listA)
+
+avglist = avgoflist([6,7,8,9])
+print(avglist)
+
+avglist = statistics.mean([6,7,8,9])
+print(avglist)
+
+
+# Activity 13
+
+list2 = [3,4,5,-10,12,0,14,56]
+currentsmallnum = list2[0]
+# Find the smallest number in a list of numbers
+for x in range(len(list2)):
+    if list2[x] < currentsmallnum:
+        currentsmallnum = x
+print("Current smallest number is ", currentsmallnum)'''

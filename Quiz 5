@@ -1,0 +1,20 @@
+# Make a copy of the provided list
+# Multiple each of the items in the list by 2 (you can do this manually or with a loop)
+# store the new list in the variable DoubleList 
+OriginalList = [4,6,8,10,12]
+DoubleList = []
+for i in range(5):
+    DoubleList[i] = OriginalList[i *2]
+    
+
+
+# Find the largest number in a list of numbers. You can use OriginalList 
+# to test your code, but you should write this code so it works for any length of list 
+# Hint: you need a loop and a conditional for this
+
+def LargNum(z x, y):
+ nl = []
+ for item in z:
+	 if x < item < y:
+		 nl.append(item)
+ return nl

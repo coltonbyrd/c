@@ -1,0 +1,96 @@
+# Write three different while loops of your choice 
+# (two should be functioning and one should be infinite) 
+'''x = 0
+while x <= 10:
+    print("Hello")
+    x += 1
+y = 8
+while y <=  8:
+    print("hello")
+    y += 1'''
+'''z = 10
+while z <= 10:
+    print(z)'''
+# Exercise 1: Write a program to keep asking for a number until you enter a negative number. 
+# At the end, print the sum of all entered numbers.
+'''inputnum = float(input("Please enter a number: "))
+while inputnum >= 0:
+    inputnum = float(input("Please enter a number: "))
+
+negnum = False
+while negnum == False:
+    inputnum = float(input("Please enter a number: "))
+    if inputnum < 0 :
+        negnum = True'''
+# Exercise 2: Write a program to ask for a name until the user enters END. 
+# Print the name each time. When you are done, print "I am done."
+'''notname = False
+while notname == False:
+    name = str(input("Please input a name: "))
+    if name == "END":
+        notname = True'''
+# Exercise 3: Write a program to ask for a name until the user enters END. 
+# Add the name to a list each time it is entered
+# When you are done, print "I am done."
+'''listname = []
+notname = False
+while notname == False:
+    name = str(input("Please input a name: "))
+    if name == "END":
+        print("I am done.")
+        notname = True
+    else:
+        listname.append(name)
+print(listname)'''
+# Exercise 4: Calculate someones GPA using the formula grade points / credit
+# where grade points is the sum of grade value x credit hours and credit is your total number of credits
+# As long as there are more grades, add them to the total
+# Divide the total by the number of courses (each grade is a course)
+# Print the corresponding letter grade
+# Stop when the user enters a negative grade
+list1 = ["y", "yes", "ya", "yeah"]
+totalGradePoints = 0
+totalCredits = 0
+GradeValues = {"f":0.0, "d":1.0,"c":2.0,"b":3.0,"a":4.0}
+if input("Do you have a class?").lower() in list1:
+    MoreClasses = True
+while MoreClasses:
+    Grade = input("What is your expected grade?")
+    GradeValue = GradeValues[Grade.lower()]
+    Credits = float(input("How many credits is the class?"))
+    totalGradePoints += GradeValue*Credits
+    totalCredits += Credits
+    if input("Do you have another class?").lower() in list1 == False:
+        MoreClasses == False
+print("Your GPA is ", totalGradePoints/totalCredits)
+
+"""CHALLENGE EXERCISE
+The game Nim starts out with seven sticks on the table.
+Each player takes turns picking up 1, 2 or 3 sticks and cannot pass.
+Whoever picks up the last stick loses (the other player wins).
+Input: The number of sticks the player is picking up
+Output:
+The number of sticks on the table
+Who won (the player or the computer)
+Other Information
+Whoever leaves 5 sticks for the other player can always win if they make the right followup move:
+If the other player takes 1, you pick up 3
+If the other player takes 2, you pick up 2
+If the other player takes 3, you pick up 1
+Exact instructions:
+1. Print the instructions
+2. Set the number of stick at 7 and initialize other values
+3. Find out if the user wants to go first or second
+4. If the user goes second, have the computer take two sticks and the user goes second, have the computer take two sticks.
+5. As long as there is no winner, keep playing
+
+5.1 While there is no winner
+5.2 Find out how many sticks the user is taking
+5.3 Make sure it’s a valid choice
+5.3.1 Make sure the user picked 1, 2, or 3 sticks
+5.3.2 Make sure that user didn’t take more sticks than are
+on the table
+5.4 Pick up the appropriate number of sticks.
+5.5 Take the sticks off the table
+5.6 See if there is a winner
+"""
