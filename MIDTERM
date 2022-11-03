@@ -1,0 +1,23 @@
+x = "Peter Piper Pizza"
+FirstWord = x.split(" ")[0]
+SecondWord = ((x.split(" ")[1]).lower) 
+Fourteen = x[14]
+
+for i in range(3):
+    num = int(input("please enter you number: "))
+    if num > 0:
+        print("Your number,", num, "is positive.")
+    elif num < 0:
+        print("Your number," , num, "is negative.")
+    if num % 2 == 0:
+        print("Your number," , num, "is even.")
+    elif num % 2 != 0:
+        print("Your number," , num, "is odd.")
+    else:
+        print("Your number is," ,num)
+
+def Days_Till_Christmas(date):
+    daysleft = 25 - date
+    print("There are," ,daysleft, "days remaining until Christmas.")
+    return daysleft
+y = Days_Till_Christmas(int(input("Please enter a date in December:")))

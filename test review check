@@ -1,0 +1,4 @@
+
+String = str(“hello there”)
+for x in range(len(String)):
+    print("Hi")
